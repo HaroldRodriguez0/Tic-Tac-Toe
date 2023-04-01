@@ -9,7 +9,7 @@ export const calcWinner = ({arr,ox}) => {
 
   for(let i=0;i<arr.length;i++){
 
-    if(i !== 0 && i !== 3 && i !== 12 && i !== 15){
+    if(i === 5 || i === 6 || i === 9 || i === 10){
 
       if( ( (arr[i-5] !== '') && (arr[i-5] === turn) && (arr[i+5] !== '') && (arr[i+5] === turn) && (arr[i] === turn) ) || 
           ( (arr[i-4] !== '') && (arr[i-4] === turn) && (arr[i+4] !== '') && (arr[i+4] === turn) && (arr[i] === turn) ) || 
